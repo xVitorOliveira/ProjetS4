@@ -1,0 +1,1 @@
+include ':app', ':mysql-connector-java-5.1.41-bin', ':okio-1.11.0', ':okhttp-3.6.0', ':java-json'
