@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ReserTerreS4</string>
+    <string name="external_dir">GetSignature</string>
+    <string name="field_required">champ requis</string>
+    <string name="observation_required">Attention vous devez renseigner la nature du problème que vous avez signalé</string>
+    <string name="errorConnexion">Erreur! Mot de passe ou nom d\'utilisateur incorect!</string>
+</resources>

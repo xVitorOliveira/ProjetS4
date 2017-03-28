@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ligne1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgoundbleu"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_retour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/rouge"
+                android:elevation="3dp"
+                android:text="Retour" />
+
+            <TextView
+                android:id="@+id/nom_gymnase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Gymnase"
+                android:textColor="@color/noir" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="jj/mm/aaaa\nheure"
+                android:textColor="@color/noir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ligne2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/backgoundmarron"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/association"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Association"
+                android:textColor="@color/noir" />
+
+            <TextView
+                android:id="@+id/creneau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Creneau : 19h - 21h"
+                android:textColor="@color/noir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ligne3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgoundbleu"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.00"
+                android:text="Hommes : "
+                android:textColor="@color/noir" />
+
+            <EditText
+                android:id="@+id/effHomme"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:hint="effectif"
+                android:inputType="number"
+                android:numeric="integer" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.00"
+                android:text="Femmes :  "
+                android:textColor="@color/noir" />
+
+            <EditText
+                android:id="@+id/effFemme"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.10"
+                android:ems="10"
+                android:hint="effectif"
+                android:inputType="number"
+                android:numeric="integer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ligne4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/backgoundmarron"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_probleme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Probleme a signaler :"
+                android:textColor="@color/noir" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_ras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="RAS"
+                        android:textColor="@color/vert" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_mineur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mineur"
+                        android:textColor="@color/orange" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_majeur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Majeur"
+                        android:textColor="@color/rouge" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/retard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="retard" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ligne5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/backgoundbleu"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_observation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Observation :"
+                android:textColor="@color/noir" />
+
+            <EditText
+                android:id="@+id/input_observation"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:ems="10"
+                android:gravity="top|left"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ligne6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/backgoundmarron"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/label_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Signature : "
+                android:textColor="@color/noir" />
+
+            <Button
+                android:id="@+id/button_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/bleu"
+                android:text="Signer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ligne7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/backgoundbleu"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_envoyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/vert"
+                android:text="Envoyer >>" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
